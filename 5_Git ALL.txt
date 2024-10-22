@@ -1,0 +1,622 @@
+
+	Все команды Git
+	_______________
+	_______________
+
+
+	1)))
+	Установка Git на компьютер
+
+1) В командной строке:
+
+	dir - cодержимое директории команда
+
+	cd - команда переход в папку
+
+	git status - есть ли Git в папке команда
+
+	git init - создание папки git в проекте
+
+	git config --global user.email 	"...@gmail.com" - авторизация эл. почты
+	
+	git config --global user.name "I...v" - имя автора
+
+	git add . - подготовить данные в git
+
+	git commit -m 'title changed' - создание коммита
+
+	git show - показать всю информацию git
+
+	Q - сброс show
+	
+	git log - информация по коммитам
+
+
+	
+
+Microsoft Windows [Version 10.0.19045.4780]
+(c) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+C:\Users\video>cd Python2024_M2
+Системе не удается найти указанный путь.
+
+
+	# Содержимое директории команда dir
+
+C:\Users\video>dir  
+ Том в устройстве C имеет метку Систем_VIDEO
+ Серийный номер тома: E24E-2BEF
+
+ Содержимое папки C:\Users\video
+
+26.08.2024  14:16    <DIR>          .
+26.08.2024  14:16    <DIR>          ..
+01.09.2022  14:36    <DIR>          3D Objects
+01.09.2022  17:04    <DIR>          ansel
+01.09.2022  23:02    <DIR>          Autodesk
+01.09.2022  14:36    <DIR>          Contacts
+02.09.2022  19:21    <DIR>          Creative Cloud Files
+31.08.2024  18:26    <DIR>          Desktop
+24.07.2024  16:05    <DIR>          Documents
+10.09.2024  11:44    <DIR>          Downloads
+01.09.2022  18:24    <DIR>          EREnt64
+26.08.2024  14:16    <DIR>          Favorites
+01.09.2022  16:27    <DIR>          Intel
+01.09.2022  18:24    <DIR>          licman
+11.04.2024  19:50    <DIR>          Links
+01.09.2022  14:36    <DIR>          Music
+01.09.2022  21:24    <DIR>          OneDrive
+14.03.2024  20:41    <DIR>          OpenVPN
+29.05.2024  20:04    <DIR>          Pictures
+30.08.2024  20:32    <DIR>          Pycharm Projects
+01.09.2022  14:36    <DIR>          Saved Games
+01.09.2022  14:46    <DIR>          Searches
+15.12.2023  22:40    <DIR>          Tracing
+27.08.2023  15:15    <DIR>          Videos
+               0 файлов              0 байт
+              24 папок  22 107 848 704 байт свободно
+
+	# Содержимое директории команда dir C:\Users\video>cd Pycharm Projects
+
+C:\Users\video>cd Pycharm Projects
+C:\Users\video\Pycharm Projects>dir
+
+ Том в устройстве C имеет метку Систем_VIDEO
+ Серийный номер тома: E24E-2BEF
+
+ Содержимое папки C:\Users\video\Pycharm Projects
+
+30.08.2024  20:32    <DIR>          .
+30.08.2024  20:32    <DIR>          ..
+24.10.2023  20:49            92 552 Aiogram_ document_ru.txt
+09.04.2023  18:09               168 BOT_name.txt
+20.07.2023  16:43             9 056 exit() в Python.txt
+04.08.2023  16:15             5 290 Git установка.txt
+03.08.2023  22:28            58 671 Git_django.txt
+24.09.2023  15:00    <DIR>          Hard Qode
+24.09.2023  15:26    <DIR>          hardqode-task
+24.05.2024  12:49               760 INFO.txt
+19.07.2023  17:22            10 632 login_id_4.xlsx
+19.08.2023  18:18    <DIR>          media
+04.07.2023  16:02             3 753 Pandas_project.txt
+19.08.2023  17:33    <DIR>          PA_Python_DPO_bot
+19.08.2023  14:20    <DIR>          project-bot-diploma
+19.08.2023  17:23    <DIR>          project-django-Megano
+28.07.2023  18:42            46 886 PyTelegramBotAPI_документация.txt
+15.10.2023  12:41    <DIR>          Python-Currency
+15.10.2023  13:15                86 Python-Currency.txt
+30.08.2024  20:27    <DIR>          Python2024
+03.09.2024  19:22    <DIR>          Python2024_M1
+23.09.2024  15:54    <DIR>          Python2024_M2
+23.09.2024  15:52    <DIR>          Python2024_M3
+30.08.2024  20:31    <DIR>          Python2024_M4
+24.10.2023  20:39    <DIR>          PythonBotaiogram
+15.11.2023  22:08    <DIR>          PythonBotaiogramBody
+15.11.2023  19:44             7 074 PythonBotaiogrambody.txt
+15.11.2023  18:50    <DIR>          PythonBotaiogramBody_001
+27.10.2023  23:18    <DIR>          PythonBotaiogramCode
+27.10.2023  18:08               453 PythonBotaiogramCode.txt
+27.10.2023  23:24    <DIR>          PythonBotaiogramCode_001
+26.10.2023  22:44    <DIR>          PythonBotaiogramInline
+25.10.2023  23:07    <DIR>          PythonBotaiogramInline _001
+26.10.2023  22:54             5 539 PythonBotaiogramInline.txt
+26.10.2023  22:56    <DIR>          PythonBotaiogramInline_002
+11.11.2023  17:34    <DIR>          PythonBotaiogramMachine
+11.11.2023  14:00                64 PythonBotaiogrammachine.txt
+11.11.2023  21:51    <DIR>          PythonBotaiogramMachine_001
+15.11.2023  16:03    <DIR>          PythonBotaiogramSite
+14.11.2023  22:23            14 998 PythonBotaiogramsite.txt
+14.11.2023  14:48    <DIR>          PythonBotaiogramSite_001
+24.10.2023  20:29    <DIR>          PythonBotaiogram_001KUBIK
+09.07.2023  16:54             9 010 Python_ Dialog.txt
+07.09.2023  20:25    <DIR>          Python_ Test
+24.10.2023  20:49            12 812 Python_Aiogram.txt
+11.09.2023  21:10    <DIR>          Python_AMOCRM
+14.10.2023  16:17    <DIR>          Python_Currency
+14.10.2023  01:29    <DIR>          Python_Currency_001
+14.10.2023  15:53    <DIR>          Python_Currency_002
+14.10.2023  16:18    <DIR>          Python_Currency_003
+14.10.2023  16:00            15 468 Python_Currency_bot.txt
+27.08.2023  15:50            25 406 Python_IGRA.txt
+26.08.2023  23:01    <DIR>          Python_IGRA_007_norna
+27.08.2023  14:16    <DIR>          Python_IGRA_008_GitHub
+27.08.2023  15:38    <DIR>          Python_IGRA_Backend
+27.08.2023  15:45                79 Python_IGRA_Backend.txt
+29.07.2023  16:25             3 895 Python_json_w_as files.txt
+07.07.2023  23:06             4 087 Python_Parsing.txt.txt
+23.07.2023  20:34             6 669 Python_Telebot_DB.txt
+29.07.2023  21:38            12 979 Python_Telebot_Weather.txt
+24.09.2023  15:18    <DIR>          Python_TestHardQode
+12.10.2023  18:40    <DIR>          Python_WEATHER
+20.08.2023  15:15            43 967 Random.txt
+02.08.2023  19:41             1 795 README.md
+20.08.2023  18:58             8 828 Time.txt
+13.11.2023  17:40             5 627 Yandex.txt
+16.07.2023  20:18            10 324 Подключение sqlite3 к телеграмм боту..txt
+19.07.2023  18:01            12 604 Телеграмм бот + sqlite3.txt
+20.07.2023  16:44             2 980 Хранение секретных данных.txt
+              31 файлов        432 512 байт
+              38 папок  22 107 168 768 байт свободно
+
+
+	# Содержимое директории команда dir C:\Users\video>cd Pycharm Projects
+	# Переход в папку команда cd Python2024_M2
+
+C:\Users\video\Pycharm Projects>cd Python2024_M2
+
+	# Содержимое директории команда dir
+
+C:\Users\video\Pycharm Projects\Python2024_M2>dir
+ Том в устройстве C имеет метку Систем_VIDEO
+ Серийный номер тома: E24E-2BEF
+
+ Содержимое папки C:\Users\video\Pycharm Projects\Python2024_M2
+
+23.09.2024  15:54    <DIR>          .
+23.09.2024  15:54    <DIR>          ..
+23.09.2024  15:55    <DIR>          .idea
+23.09.2024  15:54               544 main.py
+               1 файлов            544 байт
+               3 папок  22 085 791 744 байт свободно
+
+	# Проверка есть ли Git в папке команда git status 
+
+C:\Users\video\Pycharm Projects\Python2024_M2>git status
+fatal: not a git repository (or any of the parent directories): .git
+
+C:\Users\video\Pycharm Projects\Python2024_M2>
+
+	# Создание папки git в проекте git init 
+
+C:\Users\video\Pycharm Projects\Python2024_M2>git init
+Initialized empty Git repository in C:/Users/video/Pycharm Projects/Python2024_M2/.git/
+
+	# Содержимое папки проекта с папкой git(3 папки)
+
+C:\Users\video\Pycharm Projects\Python2024_M2>dir
+ Том в устройстве C имеет метку Систем_VIDEO
+ Серийный номер тома: E24E-2BEF
+
+ Содержимое папки C:\Users\video\Pycharm Projects\Python2024_M2
+
+23.09.2024  16:20    <DIR>          .
+23.09.2024  16:20    <DIR>          ..
+23.09.2024  16:04    <DIR>          .idea
+23.09.2024  15:54               544 main.py
+               1 файлов            544 байт
+               3 папок  22 091 190 272 байт свободно
+
+
+	# git status  папки выделены красным цветом
+
+C:\Users\video\Pycharm Projects\Python2024_M2>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .idea/
+        main.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\video\Pycharm Projects\Python2024_M2>
+
+
+	# Ввести данные в репозиторий git add .
+
+C:\Users\video\Pycharm Projects\Python2024_M2>git add .
+
+warning: in the working copy of '.idea/inspectionProfiles/Project_Default.xml', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '.idea/inspectionProfiles/profiles_settings.xml', LF will be replaced by CRLF the next time Git touches it
+
+
+	# Создать комит с названием инициация git commit -m 'initial'
+
+C:\Users\video\Pycharm Projects\Python2024_M2>git commit -m 'initial'
+
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'video@IGOR_PK.(none)')
+
+C:\Users\video\Pycharm Projects\Python2024_M2>
+
+
+	# Авторизация репозитория git config --global user.email 	"videodoctornew@gmail.com"
+	# --global user.name "Igor Shcheglov"
+
+C:\Users\video\Pycharm Projects\Python2024_M2>git config --global user.email "videodoctornew@gmail.com"
+
+C:\Users\video\Pycharm Projects\Python2024_M2>git config --global user.name "Igor Shcheglov"
+
+
+	# Создание нового коммита с правильной авторизацией git commit -m 	'initialnew'
+
+C:\Users\video\Pycharm Projects\Python2024_M2>git commit -m 'initialnew'
+
+[master (root-commit) 23a8ad1] 'initialnew'
+ 7 files changed, 86 insertions(+)
+ create mode 100644 .idea/.gitignore
+ create mode 100644 .idea/Python2024_M2.iml
+ create mode 100644 .idea/inspectionProfiles/Project_Default.xml
+ create mode 100644 .idea/inspectionProfiles/profiles_settings.xml
+ create mode 100644 .idea/misc.xml
+ create mode 100644 .idea/modules.xml
+ create mode 100644 main.py
+
+C:\Users\video\Pycharm Projects\Python2024_M2>
+
+
+	# Демонстрация результата git show
+
+C:\Users\video\Pycharm Projects\Python2024_M2>git show
+commit 23a8ad10c73bc65b63a8d8a82c56a06aa86f3d3e (HEAD -> master)
+Author: Igor Shcheglov <videodoctornew@gmail.com>
+Date:   Mon Sep 23 16:55:48 2024 +0700
+
+    'initialnew'
+
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+new file mode 100644
+index 0000000..13566b8
+--- /dev/null
++++ b/.idea/.gitignore
+@@ -0,0 +1,8 @@
++# Default ignored files
++/shelf/
++/workspace.xml
++# Editor-based HTTP Client requests
++/httpRequests/
++# Datasource local storage ignored files
++/dataSources/
++/dataSources.local.xml
+diff --git a/.idea/Python2024_M2.iml b/.idea/Python2024_M2.iml
+new file mode 100644
+index 0000000..f571432
+--- /dev/null
++++ b/.idea/Python2024_M2.iml
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="PYTHON_MODULE" version="4">
++  <component name="NewModuleRootManager">
+
+	# Выйти из демонстрации клавиша Q
+
+C:\Users\video\Pycharm Projects\Python2024_M2>
+
+
+	# Делаем изменения в файле main.py, в статусе красный цвет
+
+C:\Users\video\Pycharm Projects\Python2024_M2>git status
+
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   main.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .idea/vcs.xml
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\video\Pycharm Projects\Python2024_M2>
+
+
+C:\Users\video\Pycharm Projects\Python2024_M2>git add .
+
+C:\Users\video\Pycharm Projects\Python2024_M2>git commit -m 'title change'
+error: pathspec 'change'' did not match any file(s) known to git
+
+
+
+C:\Users\video\Pycharm Projects\Python2024_M2>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\video\Pycharm Projects\Python2024_M2>
+
+C:\Users\video\Pycharm Projects\Python2024_M2>git show
+commit 23a8ad10c73bc65b63a8d8a82c56a06aa86f3d3e (HEAD -> master)
+Author: Igor Shcheglov <videodoctornew@gmail.com>
+Date:   Mon Sep 23 16:55:48 2024 +0700
+
+    'initialnew'
+
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+new file mode 100644
+index 0000000..13566b8
+--- /dev/null
++++ b/.idea/.gitignore
+@@ -0,0 +1,8 @@
++# Default ignored files
++/shelf/
++/workspace.xml
++# Editor-based HTTP Client requests
++/httpRequests/
++# Datasource local storage ignored files
++/dataSources/
++/dataSources.local.xml
+diff --git a/.idea/Python2024_M2.iml b/.idea/Python2024_M2.iml
+new file mode 100644
+index 0000000..f571432
+--- /dev/null
++++ b/.idea/Python2024_M2.iml
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="PYTHON_MODULE" version="4">
++  <component name="NewModuleRootManager">
+
+C:\Users\video\Pycharm Projects\Python2024_M2>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   main.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .idea/vcs.xml
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\video\Pycharm Projects\Python2024_M2>git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Disable this message with "git config advice.addEmptyPathspec false"
+
+C:\Users\video\Pycharm Projects\Python2024_M2>git add .
+
+C:\Users\video\Pycharm Projects\Python2024_M2>git commit -m 'title change'
+error: pathspec 'change'' did not match any file(s) known to git
+
+C:\Users\video\Pycharm Projects\Python2024_M2>git commit -m 'title changed'
+error: pathspec 'changed'' did not match any file(s) known to git
+
+C:\Users\video\Pycharm Projects\Python2024_M2>git commit -m 'main.py changed'
+error: pathspec 'changed'' did not match any file(s) known to git
+
+C:\Users\video\Pycharm Projects\Python2024_M2>git commit -m 'name new'
+error: pathspec 'new'' did not match any file(s) known to git
+
+C:\Users\video\Pycharm Projects\Python2024_M2>git commit -m 'name main.py'
+error: pathspec 'main.py'' did not match any file(s) known to git
+
+C:\Users\video\Pycharm Projects\Python2024_M2>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\video\Pycharm Projects\Python2024_M2>git show
+commit 64cb03ed1302cf59eb7a845c9aaa6ef0c381a017 (HEAD -> master)
+Author: Igor Shcheglov <videodoctornew@gmail.com>
+Date:   Mon Sep 23 17:42:29 2024 +0700
+
+    name changed
+
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+index 0000000..94a25f7
+--- /dev/null
++++ b/.idea/vcs.xml
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/main.py b/main.py
+index 5596b44..a30d703 100644
+--- a/main.py
++++ b/main.py
+@@ -6,11 +6,11 @@
+
+ def print_hi(name):
+     # Use a breakpoint in the code line below to debug your script.
+-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
++    print(f'Привет, {name}!')  # Press Ctrl+F8 to toggle the breakpoint.
+:
+
+# Q выход из режима шоу
+
+
+# История коммитов git log
+
+C:\Users\video\Pycharm Projects\Python2024_M2>git log
+
+commit 64cb03ed1302cf59eb7a845c9aaa6ef0c381a017 (HEAD -> master)
+Author: Igor Shcheglov <videodoctornew@gmail.com>
+Date:   Mon Sep 23 17:42:29 2024 +0700
+
+    'name changed'
+
+commit 23a8ad10c73bc65b63a8d8a82c56a06aa86f3d3e
+Author: Igor Shcheglov <videodoctornew@gmail.com>
+Date:   Mon Sep 23 16:55:48 2024 +0700
+
+    'initialnew'
+
+C:\Users\video\Pycharm Projects\Python2024_M2>
+
+
+
+	2)))
+	Работа с удаленным и локальным репозиториями
+
+1) git init - создание Git репозитория в папке проекта, это .git папка
+
+2) git remove add origin path - устанавливаем в локальном репозитории путь к 				удаленному репозиторию  
+
+3) git push -u origin master - отправляем локальный репозиторий на сервер 
+
+4) git remove -v - посмотреть путь в локальном репозитории на удаленный 
+		   репозиторий
+
+5) git remote remove origin - удаление пути удаленного репозитория 
+
+
+	Изменения в репозитории
+
+1) git status - состояние Git репозитория, какие изменения сделаны
+
+2) git add . - добавление изменений в индекс 
+
+3) git commit -m 'messege' - создание коммита с коментариями
+
+4) git push - отправление коммита в удаленный репозиторий уже без -u
+
+
+	Разрешение конфликтов простых и сложных
+
+1) Простой конфликт разрешается автоматически. Для решения нужно сначало сделать затягивание измененной информации с удаленного репозитория и затем внести свои изменения и отправить на удаленный репозиторий.
+
+2) Сложный конфликт когда сделаны изменения в локальном и удаленном репозитории в одном месте и они конфликтуют. Для решения нужно сравнить эти изменения в среде разработки, выбрать правильное создав 3 вариант и добавить этот вариант в удаленный репозиторий.
+
+
+
+	3)))
+	Работа с ветками
+
+1) git status -  в какой ветке находимся
+
+2) git add . - внесение изменений в индекс 
+
+3) git commit -m 'massage' - создание коммитов с коментариями 
+
+4) git log - в каких ветках сделаны коммиты 
+
+5) git checkout -b new-branch - создание новой ветки и переключение репозитория 
+		 		в эту ветку
+
+6) git checkout master - просто переключение в ветку master
+
+7) git branch - переключает в нужную ветку
+
+8) git push -u origin branch-name - создание ветки в удаленном репозитории
+
+9) git pull - затянуть изменения в локальный репозиторий   
+
+10) git checkout branch-name - переключиться на нужную ветку
+
+11) git branch - смотреть изменения в текущей ветке
+
+12) git push - отправить данные в удаленный репозиторий в соответствующую ветку, 	       если эти ветки связаны 
+
+14) git branch -a - показать все ветки удаленные(красные) и локальные(зеленые) 
+
+
+	Откладывание изменений
+
+1) git stach - отложить изменения можно несколько раз
+
+2) git stach pop - возвращение изменений в Git
+
+3) git stach drop 0 - удаление отложенных изменений 0
+
+4) git stach list - просмотр отложенных изменений
+
+
+	Слияние веток
+
+1) git merge new-contacts - слияние текущей ветки с new-contacts
+
+2) git log - просмотреть все ветки
+
+
+
+	4)))
+	Работа с коммитами
+
+1) git diff index.html - посмотреть изменения конкретного файла
+
+2) git diff - посмотреть изменения всех файлов
+
+3) git diff e049 e697 index.html - посмотреть разницу между коммитами (4 знака)
+
+4) git diff index.html index2.html - посмотреть разницу между файлами вне 				     репозитория
+
+5) git blame index.html - подробности изменений в файле
+
+6) git log - просмотр всех коммитов
+
+7) git status - просмотр изменений
+
+	
+	Удаление изменений
+
+1) git restore <file> - удалить незакоммиченные изменения в конкретном файле
+
+2) git restore --staged <file> - вернуть из индекса
+
+3) git reset --hard - удаление всех незакоммиченных изменений, даже добавленных 
+		      в индекс 
+4) git clean -f - удаляет все новые и незакомиченные изменения 
+
+5) git rm --cached - удаляет файл из отслеживания Git
+
+	
+	Отмена закоммиченных изменений
+
+1) git checkout <commit> <file> - возвращение в рабочую директорию конкретную 				  версию конкретного файла
+
+2) git revert <commit> - отмена конкретного коммита
+
+3) git revert --no-commit <commit> - отмена нескольких коммитов
+
+	
+	Отмена (сброс) коммитов
+
+1) git reset --soft <commit> - мягкий сброс коммита с отправкой в индекс  
+
+2) git reset --mixed <commit> - смешанный сброс коммита с отправкой в рабочий 			        каталог
+
+3) git reset --hard <commit> - жесткий сброс коммита с удалением без возможности 			       возврата
+
+4) git commit --amend -m <new> - для редактирования коментариев последнего коммита 
+
+5) git commit --amend --no-edit - добавить изменения 
+
+
+	Отмена слияний, переименование и удаление веток
+
+1) git reset --merge <commit> - отмена слияния получившегося 
+
+2) git merge --abort - отмена слияния не получившегося
+
+3) git branch -m - переименование ветки
+
+4) git branch -d <branch> - удаление ветки предворительно слив ее с какой то 
+			    другой веткой   
