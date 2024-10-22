@@ -478,11 +478,12 @@ C:\Users\video\Pycharm Projects\Python2024_M2>
 
 1) git init - создание Git репозитория в папке проекта, это .git папка
 
-2) git remove add origin path - устанавливаем в локальном репозитории путь к 				удаленному репозиторию  
+2) git remote add origin https://github.com/ishcheglov/Python2024_M5.git -
+    устанавливаем в локальном репозитории путь к удаленному репозиторию
 
 3) git push -u origin master - отправляем локальный репозиторий на сервер 
 
-4) git remove -v - посмотреть путь в локальном репозитории на удаленный 
+4) git remote -v - посмотреть путь в локальном репозитории на удаленный
 		   репозиторий
 
 5) git remote remove origin - удаление пути удаленного репозитория 
